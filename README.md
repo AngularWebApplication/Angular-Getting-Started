@@ -1,2 +1,2 @@
-# Angular-Getting-Started
-About Angular Development for beginners from Deborrah Kurata
+# Angular-CLI
+About Angular Development with CLI for beginners from John Papa
