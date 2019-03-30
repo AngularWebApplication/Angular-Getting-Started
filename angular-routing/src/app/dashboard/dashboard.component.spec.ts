@@ -1,5 +1,5 @@
 import { LayoutModule } from '@angular/cdk/layout';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import {
   MatButtonModule,
@@ -7,6 +7,12 @@ import {
   MatGridListModule,
   MatIconModule,
   MatMenuModule,
+  MatToolbarModule,
+  MatSidenavModule,
+  MatListModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule
 } from '@angular/material';
 
 import { DashboardComponent } from './dashboard.component';
@@ -19,13 +25,19 @@ describe('DashboardComponent', () => {
     TestBed.configureTestingModule({
       declarations: [DashboardComponent],
       imports: [
-        NoopAnimationsModule,
+        BrowserAnimationsModule,
         LayoutModule,
+        MatToolbarModule,
         MatButtonModule,
-        MatCardModule,
-        MatGridListModule,
+        MatSidenavModule,
         MatIconModule,
+        MatListModule,
+        MatGridListModule,
+        MatCardModule,
         MatMenuModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule
       ]
     }).compileComponents();
   }));
